@@ -1,0 +1,248 @@
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+    margin: 0;
+    padding: 0;
+
+}
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    width: 870px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 33px 30px 42px 30px;
+    margin-bottom:35px;
+}
+.containers{
+    width: 870px;
+}
+hr{
+    border: 1px solid #D1D1D1;
+    margin-bottom: 25px;
+
+}
+.ahsan{
+    margin: 0;
+    padding: 0;
+}
+
+/* header sections */
+header {
+    background-color: #6c6cd5;
+    display: flex; 
+    justify-content: center;
+}
+ nav{
+     display:flex;
+     justify-content: space-between;
+ }
+ .header-logo img{
+    width: 130px;
+    height: 160px;
+    margin-bottom: -50px; 
+    margin-left: -29px;
+ }
+ .header-menu ul{ 
+     
+    display: flex;
+    margin-top: 40px; 
+    padding-left: 0px;
+ }
+ .header-menu ul li{
+     list-style: none;
+     margin-left: 30px;
+
+ }
+ .header-menu ul li a{
+     text-decoration: none;
+     color: white;
+     text-transform: uppercase;
+     font-size: 20px;
+ }
+ .header-menu ul li:hover a {
+    color: #ff5200;
+    text-decoration: underline;
+    transition: color 2s;
+}
+
+/* top player section */
+.top-players {
+    padding-bottom: 21px;
+}
+h2.section-title span:hover {
+    text-decoration: underline;
+    cursor: context-menu;
+}
+.section-title{
+    color: #562EFF;
+    font-size: 24px;
+    margin-top: 0px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+}
+.player{
+    display: flex;  
+    align-items: center;
+    overflow: hidden;
+}
+.player img{
+    width: 56px;
+    height: 56px; 
+} 
+.player img:hover {
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+.player-name{
+    padding-left: 16px;
+    font-size: 18px;
+}
+h3.player-name:hover {
+    text-decoration: underline;
+    cursor: context-menu;
+}
+
+/* top blog styles */
+h2.section-title span:hover {
+    text-decoration: underline;
+    cursor: context-menu;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap:35px;
+}
+.blog{
+    display:flex;
+}
+.blog .thumnail img{
+    width:177px;
+    height:117px;
+}
+.blog-info{
+    margin-left:16px;
+}
+.blog-title{
+    font-size:20px;
+    line-height: 24px;
+}
+h2.blog-title:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.blog-author{
+    color:#9F9F9F;
+}
+.blog-author a{
+    text-decoration:none;
+    color:#562EFF;
+    font-size: 16px;
+
+}
+
+/* lates course */
+h1.section-title span:hover {
+    text-decoration: underline;
+    cursor: context-menu;
+}
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+}
+.course .course-banner img{
+    width: 224px;
+    height: 104px;
+}
+.course-info{
+    display:flex;
+    justify-content: space-between;
+}
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filled{
+    color: #FFC014;
+}
+.fa-star.empty{
+    color: #AEAEAE;
+}
+.course-dueration {
+    background-color: #efe4e4;
+    width: 100px;
+    text-align: center;
+    border-radius: 20px;
+    margin-right: 25px;
+}
+p.course-author {
+    color: red;
+}
+
+h3.course-title {
+    width: 225px;
+    line-height: 25px;
+    font-size: 18px;
+}
+
+span {
+    margin-left: 5px;
+}
+h2.blog-title {
+    width: 200px;
+    font-size: 20px;
+}
+.course-banner img:hover {
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+
+.course {
+    overflow: hidden;
+}
+i.far.fa-clock {
+    color: #cb2626;
+}
+.course-dueration span {
+    color: #cd1717;
+}
+
+/* Media Querise */
+/* mobile device */
+ 
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    
+    .players, .blogs, .courses{ 
+        grid-template-columns: repeat(1,1fr); 
+    }
+    .player, .blog{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+/* lablet devices */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .players{ 
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .player, .blog{
+        justify-content: center;
+    }
+}
